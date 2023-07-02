@@ -1,0 +1,45 @@
+/* Общий класс для всех заголовков h2 */
+.headline {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+
+/* Блок логотипа */
+
+.logo {
+  display: block;
+}
+
+@media (max-width: 1120px) {
+  .logo {
+    height: 55px;
+  }
+}
+
+/* Навигация в шапке */
+
+.nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav__item {
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1120px) {
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__item {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
