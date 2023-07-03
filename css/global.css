@@ -75,6 +75,12 @@ html {
     margin: 0 auto;
     border: 1px solid tomato;
   }
+
+  @media (max-width: 670px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
   
   /* Задаем нижний отступ для секций */
   .banner {

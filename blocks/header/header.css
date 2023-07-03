@@ -1,6 +1,6 @@
 .header {
     padding: 30px 0 0;
-    margin: 0 0 146px;
+    margin: 0 0 58px;
 }
 
 .header__inner {
@@ -28,9 +28,19 @@
 /* Медиа запросы */
 
 @media (max-width: 1120px) {
+    .header {
+        margin: 0 0 30px;
+    }
+
     .header__callback {
         padding: 10px 26px;
         font-size: 18px;
         line-height: 24px;
+    }
+}
+
+@media (max-width: 880px) {
+    .header {
+        display: none;
     }
 }
