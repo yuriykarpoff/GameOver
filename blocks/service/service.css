@@ -1,0 +1,70 @@
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.service__item {
+    flex: 0 1 380px;
+    padding: 166px 40px 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 228px;
+    transition-duration: 0.8s;
+}
+
+.service__item:nth-child(2) {
+    margin-top: 70px;
+}
+
+.service__item:nth-child(2n+4) {
+    margin-top: -70px;
+}
+
+.service__item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.5s linear;
+}
+
+.service__name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.service__item_decor-vr {
+    background-image: url(img/vr.jpg); 
+    
+}
+  
+.service__item_decor-audio { 
+    background-image: url(img/audio.jpg);
+}
+  
+.service__item_decor-karaoke {
+    background-image: url(img/karaoke.jpg);
+}
+  
+.service__item_decor-games {
+    background-image: url(img/games.jpg);
+}
+
+.service__item_decor-cinema {
+    background-image: url(img/cinema.jpg);
+}
+
+.service__item_decor-ps {
+    background-image: url(img/ps.jpg);
+}
+
+@media (max-width: 1241px) {
+    .service__list {
+        gap: 30px 22px;
+    }
+    .service__item {
+        flex: 0 1 287px;
+        padding: 114px 20px 5px;
+        max-height: 172px;
+    }
+}
