@@ -58,7 +58,7 @@
     background-image: url(img/ps.jpg);
 }
 
-@media (max-width: 1241px) {
+/* @media (max-width: 1241px) {
     .service__list {
         gap: 30px 22px;
     }
@@ -67,4 +67,4 @@
         padding: 114px 20px 5px;
         max-height: 172px;
     }
-}
+} */
