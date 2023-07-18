@@ -1,22 +1,6 @@
-/* .service__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 20px;
-}
-
-.service__item {
-    flex: 0 1 380px;
-    padding: 166px 40px 6px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-height: 228px;
-    transition-duration: 0.8s;
-} */
-
 .service__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: repeat(3, minmax(135px, 380px)); */
     gap: 40px 20px;
 }
 
@@ -40,7 +24,7 @@
 }
 
 .service__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
     cursor: pointer;
     transition: transform 0.5s linear;
 }

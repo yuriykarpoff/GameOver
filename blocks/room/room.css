@@ -1,0 +1,87 @@
+.room__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.room__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 349px;
+}
+
+.room__link {
+    text-align: center;
+    max-width: 252px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    color: var(--white);
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 1;
+    transition-duration: 0.5s;
+}
+
+.room__link:hover,
+.room__link:active,
+.room__link:focus {
+    color: var(--link-violet);
+    text-shadow: 1px 1px 1px var(--black);
+    transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
+}
+
+.room__item_decor-vibes {
+    background-image: url(img/room_vibes.jpg); 
+    
+}
+  
+.room__item_decor-wars { 
+    background-image: url(img/room_starwars.jpg);
+}
+  
+.room__item_decor-west {
+    background-image: url(img/room_west.jpg);
+}
+  
+.room__item_decor-neon {
+    background-image: url(img/room_neon.jpg);
+}
+
+@media (max-width: 1025px) {
+    .room__item {
+        height: 267px;
+    }
+    .room__link {
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 769px) {
+    .room__item {
+        height: 200px;
+    }
+    .room__link {
+        max-width: 121px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 321px) {
+    .room__list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .room__item {
+        height: 168px;
+    }
+    .room__link {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
