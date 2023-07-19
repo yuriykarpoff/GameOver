@@ -7,25 +7,28 @@
 
 .about__img {
     grid-row: span 2;
+    height: 596px;
 }
 
 .about__text-block {
-    display: block;
+    margin: 0 0 70px;
 }
 
 .about__text {
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 30px;
 }
 
 .about__text:last-child {
     margin: 0;
 }
-  
+
 .quote {
     margin: 0;
     padding: 0;
 }
-
+  
 .quote__text {
     position: relative;
     font-size: 44px;
@@ -35,7 +38,6 @@
     padding: 0 0 0 31px;
     white-space: pre-line;
 }
-  
   
 .quote__text:before {
     position: absolute;
