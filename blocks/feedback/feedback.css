@@ -1,0 +1,45 @@
+.feedback__list {
+    padding: 0 100px;
+    display: grid;
+    gap: 50px;
+}
+
+.feedback__item {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+}
+
+.feedback__image-wrapper {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 0 0 11px;
+}
+
+.feedback__image-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+    border-radius: 50%;
+}
+
+.feedback__image {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.feedback__name {
+    text-align: center;
+}
+
+.feedback__text {
+    align-self: center;
+}
