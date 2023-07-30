@@ -76,3 +76,133 @@
     font-style: normal;
     max-width: 380px;
 }
+
+
+@media (max-width: 1025px) {
+    .about__wrapper {
+        column-gap: 40px;
+    }
+    .about__text-block {
+        margin: 0 0 37px;
+    }    
+    .about__text {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 20px;
+    }
+    .about__img {
+        height: 417px;
+    }
+    .quote__text {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 790px) {
+    .quote__author-info {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 769px) {
+    .about__text-block {
+        margin: 0;
+        align-self: center;
+    }
+    .about__text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .about__img {
+        grid-row: span 1;
+        width: 380px;
+        height: 380px;
+    }
+    .quote {
+        grid-column: span 2;
+        padding: 40px 0 0;
+    }
+    .quote__text {
+        white-space: normal;
+        max-width: 600px;
+        font-size: 32px;
+        line-height: 1;
+        margin: 0 0 16px;
+    }
+    .quote__author-img {
+        margin-right: 25px;
+    }
+    .quote__author-info {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 620px) {
+    .quote__text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 577px) {
+    .about__text-block {
+        order: 0;
+        grid-column: span 2;
+        margin: 0 0 25px;
+    }
+    .about__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .about__img {
+        order: 1;
+        grid-column: span 2;
+        width: 400px;
+        height: 400px;
+        justify-self: center;
+    }
+    .quote {
+        order: 2;
+    }
+    .quote__text {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+}
+
+@media (max-width: 481px) {
+    .about__img {
+        width: 280px;
+        height: 280px;
+    }
+    .about__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .quote {
+        padding: 20px 0 0;
+    }
+    .quote__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 9px;
+    }
+    .quote__text:before {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .quote__text:after {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .quote__author-info {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 220px;
+    }
+    .quote__author-img {
+        width: 56px;
+        height: 56px;
+        margin-right: 11px;
+    }
+}
