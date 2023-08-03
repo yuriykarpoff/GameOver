@@ -75,12 +75,6 @@ html {
     margin: 0 auto;
     border: 1px solid red;
   }
-
-  @media (max-width: 670px) {
-    .container {
-      padding: 0 15px;
-    }
-  }
   
   /* Задаем нижний отступ для секций */
   .banner {
@@ -96,5 +90,16 @@ html {
   }
   
   .faq {
-    padding: 0 0 100px;
+    padding: 0 30px 100px;
+  }
+
+  /* Медиа запросы */
+
+  @media (max-width: 670px) {
+    .container {
+      padding: 0 15px;
+    }
+    .faq {
+      padding: 0 15px 100px;
+    }
   }
