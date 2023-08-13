@@ -31,6 +31,18 @@
     background-image: url(img/bg_vibes.jpg);
 }
 
+.room-poster__decor-starwars {
+    background-image: url(img/bg_starwars.jpg);
+}
+
+.room-poster__decor-wildwest {
+    background-image: url(img/bg_wildwest.jpg);
+}
+
+.room-poster__decor-neon {
+    background-image: url(img/bg_neon.jpg);
+}
+
 .room-poster__title {
     font-size: 90px;
     line-height: 80px;
