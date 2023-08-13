@@ -1,0 +1,171 @@
+/*  */
+
+/* Ссылка Вернуться назад */
+
+.back__icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.back__link {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.back__link:hover {
+    color: var(--link-violet);
+}
+
+/* Блок большого постера */
+
+.room-poster {
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    height: 775px;
+    display: flex;
+    align-items: center;
+}
+
+.room-poster__decor-vibes {
+    background-image: url(img/bg_vibes.jpg);
+}
+
+.room-poster__title {
+    font-size: 90px;
+    line-height: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+/* Блок с описанием комнты под постером */
+
+.room-desc__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+/* Блок - Что есть в комнате? */
+
+.property__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.property__img {
+    width: 600px;
+    height: 424px;
+}
+
+.property__text-wrapper {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Вывод карточек с остальными комнатами */
+
+.room__list__on-page {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.room__item_on-page {
+    height: 229px;
+}
+
+.room__link-on-page {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 102px;
+}
+
+/* Начало адаптива */
+
+@media (max-width: 1025px) {
+    .room-poster {
+        height: 534px;
+    }
+    .room-desc__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .property__wrapper {
+        gap: 30px;
+    }
+    .property__text-wrapper {
+        font-size: 18px;
+    }
+    .room__item_on-page {
+        height: 172px;
+    }
+}
+
+@media (max-width: 769px) {
+    .room-poster {
+        height: 402px;
+    }
+    .room-poster__title {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .room-desc__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .property__wrapper {
+        gap: 46px;
+    }
+    .property__text-wrapper {
+        font-size: 16px;
+    }
+    .room__list__on-page {
+        gap: 8px;
+    }
+    .room__item_on-page {
+        height: 134px;
+    }
+    .room__link-on-page {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 631px) {
+    .property__text-wrapper {
+        font-size: 14px;
+        line-height: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 481px) {
+    .room-poster {
+        height: 168px;
+    }
+    .room-poster__title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .property__wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .property__text-wrapper {
+        font-size: 12px;
+        line-height: 16px;
+        gap: 16px;
+    }
+    .room__list__on-page {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .room__item_on-page {
+        height: 140px;
+    }
+}

@@ -21,8 +21,19 @@
     text-transform: uppercase;
 }
 
-.mobile-nav {
+/* Меню бургер для мобильных устройств */
+
+
+.mobile-nav__icon {
     display: none;
+    width: 54px;
+	height: 29px;
+}
+
+@media (max-width: 880px) {
+    .mobile-nav__icon {
+        display: block;
+    }
 }
 
 /* Медиа запросы */
@@ -40,7 +51,13 @@
 }
 
 @media (max-width: 880px) {
-    .header {
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 577px) {
+    .header__callback {
         display: none;
     }
 }
