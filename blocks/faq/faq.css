@@ -1,3 +1,7 @@
+.faq {
+    padding: 0 30px;
+  }
+
 .faq__item {
     padding: 30px 70px;
     margin-bottom: 20px;
@@ -16,6 +20,15 @@
     color: var(--white);
 }
 
+.faq__item:nth-child(odd):hover,
+.faq__item:nth-child(even):hover {
+    color: var(--faq-hover);
+}
+
+.faq__item:focus {
+    color: var(--faq-hover);
+}
+
 .faq__item:last-child {
     margin-bottom: 0;
 }
@@ -27,6 +40,13 @@
     gap: 20px;
     width: 100%;
     transition-duration: 0.6s;
+}
+
+.faq__link:focus {
+    outline: none;
+    border-radius: 10px;
+    transition: outline 0.4s linear;
+    text-decoration: underline;
 }
 
 .faq__icon {
@@ -60,6 +80,12 @@
     .faq__item {
         font-size: 18px;
         padding: 23px 54px;
+    }
+}
+
+@media (max-width: 670px) {
+    .faq {
+      padding: 0 15px;
     }
 }
 

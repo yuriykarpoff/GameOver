@@ -227,6 +227,7 @@ input {
 
 .add-booking__button:focus {
     outline: 3px solid var(--input-violet);
+    background-color: var(--bg-light);
     transition: outline 0.4s linear;
 }
 

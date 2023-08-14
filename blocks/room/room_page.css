@@ -1,6 +1,14 @@
-/*  */
+/*  Стили для отдельных страниц комнат*/
+
+.content-poster {
+    padding-top: 0;
+}
 
 /* Ссылка Вернуться назад */
+
+.back {
+    padding: 50px 0 20px;
+}
 
 .back__icon {
     width: 30px;
@@ -11,10 +19,12 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
+    transition-duration: 0.6s;
 }
 
 .back__link:hover {
     color: var(--link-violet);
+    transition: color 0.4s ease;
 }
 
 /* Блок большого постера */
